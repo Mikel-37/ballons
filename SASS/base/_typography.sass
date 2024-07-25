@@ -1,0 +1,61 @@
+.title-first //Параметры для заголовка
+    color: $color-white
+    &__main // Первый заголовок 
+        display: block
+        font-weight: 800
+        font-size: 5rem
+        line-height: 6rem
+        letter-spacing: 1rem
+        text-transform: uppercase
+        margin-bottom: 1rem
+        animation-name: mainAnim
+        animation-duration: 3s
+        animation-delay: 1s
+        animation-timing-function: ease-in-out
+        backface-visibility: hidden
+    &__secondary // Второй заголовок
+        display: block
+        font-weight: 100
+        font-size: 4rem
+        line-height: 4.8rem
+        letter-spacing: 0.5rem
+        animation-name: secondaryAnim
+        animation-duration: 3s
+        animation-delay: 1s
+        animation-timing-function: ease-in-out
+        backface-visibility: hidden
+        margin-bottom: 6.5rem
+
+.title-secondary
+    text-align: center
+    display: inline-block
+    font-size: $font-size-paragraph-h2 //Размер шрифта
+    letter-spacing: 10px //Межбуквенное расстояние
+    text-transform: uppercase //Все буквы заглавные
+    font-weight: 800
+    background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown-dark, 0.7) 99.94%)
+    -webkit-background-clip: text //Конструкция которая делает так чтобы наш градиент был не ввиде фона а был в фоне самих букв
+    color: transparent // Важное свойство без которого фон не наложится на текст и будет как бы под ним
+    transition: all .4s // Свойство плавности
+    backface-visibility: hidden // Свойство которое помогает избегать глюков с анимациями   
+    &:hover
+        transform: scale(1.05) //Свойства поворота по осям и увеличения на 5%
+        text-shadow: $shadow-h2 //Тень для текста
+    &_white
+        color: white
+
+.title-third
+    font-size: $font-size-paragraph-h3
+    letter-spacing: 2px //Межбуквенное расстояние
+    text-transform: uppercase
+    font-weight: 700
+
+.paragraph-about
+    font-size: $font-size-paragraph
+    letter-spacing: 2px //Межбуквенное расстояние
+    line-height: 140%
+    font-weight: 400
+
+    
+
+

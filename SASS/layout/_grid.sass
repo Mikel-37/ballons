@@ -1,0 +1,48 @@
+.row
+    max-width: 1140px
+    margin: 0 auto //Чтобы колонки встали четко по центру
+    &:not(:last-child)//Убирает отсутпы с последней строки 
+        margin-bottom: $margin-vertical //Отступы между строками 
+    @include clearfix
+.col-1-of-2
+    &:not(:last-child)
+        margin-right: $margin-horizontal //Отступ справа
+    width: calc((100% - #{$margin-horizontal})/2)//Ширина
+    float: left
+
+.col-1-of-3
+    &:not(:last-child)
+        margin-right: $margin-horizontal //Отступ справа
+    width: calc((100% - 2 * #{$margin-horizontal})/3)//Ширина
+    
+    float: left
+
+.col-2-of-3
+    &:not(:last-child)
+        margin-right: $margin-horizontal //Отступ справа
+    width: calc(2 * ((100% - 2 * #{$margin-horizontal})/3) + #{$margin-horizontal})//Ширина
+    
+    float: left
+
+.col-1-of-4
+    &:not(:last-child)
+        margin-right: $margin-horizontal //Отступ справа
+    width: calc((100% - 3 * #{$margin-horizontal})/4)//Ширина
+    
+    float: left
+
+.col-2-of-4
+    &:not(:last-child)
+        margin-right: $margin-horizontal //Отступ справа
+    width: calc(2 * ((100% - 3 * #{$margin-horizontal})/4) + #{$margin-horizontal})//Ширина
+    
+    float: left
+
+.col-3-of-4
+    &:not(:last-child)
+        margin-right: $margin-horizontal //Отступ справа
+    width: calc(3 * ((100% - 3 * #{$margin-horizontal})/4) + 2 * #{$margin-horizontal})//Ширина
+    
+    float: left
+
+

@@ -1,0 +1,20 @@
+.btn-text
+    &:link, &:visited
+        font-size: $font-size-paragraph
+        letter-spacing: 2px
+        font-weight: 700
+        color: $color-brown-light
+        text-decoration: none //Убрать подчеркивание и прочее 
+        padding: 10px // Отступы со всех сторон 
+        border-bottom: 1px $color-brown-light solid // Именно солид делает рамку снизу
+        display: inline-block
+        transition: 0.5s //Плавность
+    &:hover
+        background-color: $color-brown-light // Кнопка получит коричневый фон при наведении
+        color: $color-white
+        box-shadow: $box-shadow
+        transform: translateY(-3px)
+        
+    &:active
+        transform: translateY(0px)
+        

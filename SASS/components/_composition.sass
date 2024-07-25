@@ -1,0 +1,27 @@
+.composition
+    position: relative //Необходимое позиционирование чтобы наложить одно фото на другое 
+    &__photo //Указали класс элемента (2 нижних подчеркивания)
+        width: 55%
+        box-shadow: $box-shadow
+        border-radius: 5px //Закругляет контейнер с фото
+        position: absolute //Необходимое позиционирование чтобы наложить одно фото на другое
+        transition: all 0.3s
+        outline-offset: 10px // Отступ рамки от фото !!!
+        &_n1 //(1 нижнее подчеркивание)
+            top: 0rem
+            left: 0rem
+        &_n2
+            top: 2rem
+            right: 0rem
+        &_n3
+            top: 13rem
+            left: 10rem
+        &:hover
+            outline: 10px solid $color-brown-light // !!! Рамка для фоток (Толщина сплощная линия цвет)
+            transform: scale(1.1) //Увеличение на 10%
+            z-index: 20 //При нажатии выносит изображение на передний план
+    &:hover &__photo:not(:hover ) //Изображения на которые мы не нажимаем уменьшаются принажатии на другое 
+        transform: scale(0.9)
+        
+
+

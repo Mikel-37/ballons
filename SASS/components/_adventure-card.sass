@@ -1,0 +1,15 @@
+.adventure-card //Стилизация Карточек
+    padding: 25px
+    background-color: rgba($color-white, 0.8) // (0,8 это прозрачность поэтому используем rgba)
+    border-radius: 5px // Закругление Карточки
+    box-shadow: $box-shadow
+    text-align: center // Текст в Карточке по центру
+    transition: all 0.3s
+    &:hover
+        transform: translateY(-15px) scale(1.05)
+    &__icon //Стилизация Иконок
+        font-size: 60px //Размер текста
+        background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown-dark, 0.7) 99.94%)
+        -webkit-background-clip: text //объяснение в типографии
+        color: transparent //объяснение в типографии
+        display: inline-block
